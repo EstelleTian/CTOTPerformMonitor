@@ -1,0 +1,105 @@
+html,
+body,
+.container-fluid {
+  height: 100%;
+  min-width: 666px;
+}
+.relative {
+  position: relative;
+}
+.tab-pane {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.tab-pane .content {
+  height: 90%;
+}
+.tab-pane.active {
+  z-index: 2;
+}
+.no-padding {
+  padding: 0px!important;
+}
+.header {
+  border-bottom: 1px solid #ccc;
+  margin: 5px;
+  padding: 5px;
+}
+.header .header-title {
+  color: #4DB3A2;
+  font-size: 24px;
+}
+.control-label {
+  vertical-align: middle;
+  height: 35px;
+  line-height: 35px;
+  text-align: right;
+}
+.gap-5p {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex .flex-child {
+  flex: 1;
+}
+.nav-tabs a {
+  color: #4DB3A2;
+  font-size: 16px;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4DB3A2;
+  border: 1px solid #4DB3A2;
+}
+.search {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.search .title {
+  padding-left: 20px;
+}
+.search .input-daterange {
+  width: 270px;
+  display: inline-table;
+  top: 10px;
+}
+.search .search-btn {
+  margin-left: 10px;
+}
+.time-content {
+  position: relative;
+  bottom: 6%;
+  color: #4DB3A2;
+  font-size: 18px;
+  text-align: center;
+}
+.stable-alert {
+  position: relative;
+  bottom: 7%;
+  color: #4DB3A2;
+  text-align: center;
+  font-size: 16px;
+}
+.input-daterange .form-control[readonly] {
+  background-color: #ffffff;
+}
+.error-content.active {
+  display: inline-block;
+}
+.error-content {
+  display: none;
+  padding: 8px;
+  margin-left: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 300px;
+}

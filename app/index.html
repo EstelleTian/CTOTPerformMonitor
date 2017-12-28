@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>机场CTOT数据分析</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body class="ctot-container">
+    <div class="container-fluid flex">
+        <div class="row header">
+            <span class="header-title">机场CTOT数据分析</span>
+        </div>
+        <div class="row search">
+            <label class="title">机场：</label>
+            <select class="selectpicker airport-select" multiple >
+            </select>
+            <label class="title">起止日期：</label>
+            <div class="input-daterange input-group">
+                <input type="text" class="input-sm form-control" name="start" readonly />
+                <span class="input-group-addon">至</span>
+                <input type="text" class="input-sm form-control" name="end" data-date-end-date="0d" readonly />
+            </div>
+            <button class="atfm-btn atfm-btn-green ladda-button search-btn" data-style="zoom-in">查询</button>
+            <span class="error-content alert-danger"></span>
+
+        </div>
+        <div class="row gap-5p">
+            <ul class="nav nav-tabs col-md-12">
+                <li class="active">
+                    <a href="#tab1" data-toggle="tab">误差比率</a>
+                </li>
+                <li><a href="#tab2" data-toggle="tab">跳变幅度</a></li>
+                <li><a href="#tab3" data-toggle="tab">跳变次数</a></li>
+            </ul>
+
+        </div>
+        <div class="row gap-5p flex-child relative">
+            <div class="tab-pane fade in active" id="tab1">
+                <div class="content" id="errorAnalysis"></div>
+            </div>
+            <div class="tab-pane fade " id="tab2">
+                <div class="content" id="stepAmplitude"></div>
+            </div>
+            <div class="tab-pane fade " id="tab3">
+                <div class="content" id="stepTime"></div>
+            </div>
+        </div>
+        <div class="row stable-alert">
+            <span class="title">鼠标拖动图可以进行缩放</span>
+        </div>
+        <div class="row time-content">
+            <span class="title">当前数据时间：</span>
+            <span class="value"></span>
+        </div>
+    </div>
+
+</body>
+</html>
